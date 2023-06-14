@@ -28,3 +28,34 @@ With these queries, I successfully populated the tables with the respective CSV 
 Now, the first task is completed, and the database is ready for further operations.<br />
 2.Create an HTTP server with the following routes<br />
   Built HTTP server code with routes to interact with a MySQL database by using Node.js, Express.js, and MySQL.<br />
+ a.)GET /api/v1/longest-duration-movies
+This route returns as JSON the top 10 movies with the longest runTime
+The output should contain tconst, primaryTitle, runtimeMinutes & genres <br/>
+ ![Screenshot (104)](https://github.com/Sujal9071/Onito_Technologies_Backend_Coding_Task/assets/91529937/e3d516b2-6b1f-4041-8394-b999744e7ae6) <br />
+ b.)POST /api/v1/new-movie
+This route takes JSON as input for new movie and saves it into the database
+On successful save, it returns “success”<br/>
+ ![Screenshot (105)](https://github.com/Sujal9071/Onito_Technologies_Backend_Coding_Task/assets/91529937/df81a980-edd5-495a-8bac-245060920c68) <br />
+ c.)GET /api/v1/top-rated-movies
+This route returns as JSON the movies with an averageRating > 6.0, in sorted
+order by averageRating
+The output should contain tconst, primaryTitle, genre & averageRating.<br/>
+ ![Screenshot (106)](https://github.com/Sujal9071/Onito_Technologies_Backend_Coding_Task/assets/91529937/356d2b4f-24e4-410e-9639-36a0e547bca7) <br />
+ d.)GET /api/v1/genre-movies-with-subtotals
+Show a list of all movies genre-wise with Subtotals of their numVotes.
+The calculation of subtotals should be done in SQL query; not the API code
+Output format :<br/>
+ ![Screenshot (108)](https://github.com/Sujal9071/Onito_Technologies_Backend_Coding_Task/assets/91529937/acba8ca3-1a4a-4f91-8777-23dd8cf851c7) <br/>
+     ![Screenshot (109)](https://github.com/Sujal9071/Onito_Technologies_Backend_Coding_Task/assets/91529937/5fb77636-f208-43e3-ae4e-8b2d87ee8a97) <br />
+     ![Screenshot (110)](https://github.com/Sujal9071/Onito_Technologies_Backend_Coding_Task/assets/91529937/bcd07540-2c30-41a3-a36b-820200344146) <br />
+  e.)POST /api/v1/update-runtime-minutes
+Increment runtimeMinutes of all Movies using only SQL query (not in API code).
+Increment runtimeMinutes by :
+15 if genre = Documentary
+30 if genre = Animation
+45 for the rest<br/>
+  ![Screenshot (111)](https://github.com/Sujal9071/Onito_Technologies_Backend_Coding_Task/assets/91529937/766cfd13-74d5-4ad2-a3db-0aed3cbab6dd) <br />
+
+
+
+
