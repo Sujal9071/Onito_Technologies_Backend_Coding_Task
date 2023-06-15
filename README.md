@@ -1,4 +1,5 @@
-# Onito_Technologies_Backend_Coding_Task
+# Onito_Technologies_Backend_Coding_Task<br/>
+Link to the Assignment - https://drive.google.com/file/d/1h6qeV1u5Qd8qEveWPYZInI3Kvl8T4w_k/view?usp=sharing<br/>
 Backend Coding Task <br />
 1. Create SQL Tables `movies` & `ratings`, and populate the CSV data into them.<br />
 To set up the MySQL database in my local machine, I created a database named 'sujal' and created two tables: movies and ratings. Here are the queries for creating the tables:<br />
